@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.header h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.student-name {
+  color: #333;
+}
+
+.student-id {
+  color: white;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Content area */
+.content {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.highlight {
+  border-left: 5px solid orange;
+  padding-left: 10px;
+  background-color: #fff3e0;
+  color: red;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.grade-A {
+  color: green;
+  font-weight: bold;
+}
+
+.grade-B {
+  color: orange;
+  font-weight: bold;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #666;
+}
+
+.grade-box {
+  background-color: #fff3f3;
+  color: red;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.grade-red {
+  color: red;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
