@@ -51,7 +51,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Content area */
+
 .content {
   padding: 20px;
   background-color: white;
@@ -98,7 +98,7 @@ form button:hover {
   background-color: #218838;
 }
 
-/* Table */
+
 table {
   width: 100%;
   border-collapse: collapse;

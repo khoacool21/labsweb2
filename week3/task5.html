@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Minutes Calculator</title>
+</head>
+<body>
+  <h1>Calculate total minutes</h1>
+  <p id="result"></p>
+
+  <label>Enter Hours:</label>
+  <br>
+  <input type="number" id="hours" placeholder="e.g. 2">
+  <br><br>
+
+  <label>Enter Minutes:</label>
+  <br>
+  <input type="number" id="minutes" placeholder="e.g. 30">
+  <br><br>
+
+  <button onclick="calculateTotalMinutes()">Calculate Total Minutes</button>
+
+  <script>
+    function calculateTotalMinutes() {
+      let hours = parseInt(document.getElementById("hours").value);
+      let minutes = parseInt(document.getElementById("minutes").value);
+
+      if (!isNaN(hours) && !isNaN(minutes)) {
+        let total = (hours * 60) + minutes;
+        document.getElementById("result").innerHTML = 
+          hours + " hour(s) and " + minutes + " minute(s) = " + total + " minutes";
+      } 
+    }
+  </script>
+</body>
+</html>

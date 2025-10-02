@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id ="text"></p>
+  <h1>Calculate the area of a rectangle </h1>
+  <label>Enter Width</label>
+  <br>
+  <input type="number" id="width">
+  <br>
+  <br>
+  <label>Enter Height</label>
+  <br>
+  <input type="number" id="height">
+  <br>
+  <button onclick="doCalc()">Calculate Area</button>
+  <script>
+    function calcRectangleArea(width, height) {
+      let area = width * height;
+      return area;
+    }
+
+    function doCalc() {
+      let width = document.getElementById("width").value;
+      let height = document.getElementById("height").value;
+      let area = calcRectangleArea(width, height);
+      document.getElementById("text").innerHTML += "<br>The area of a rectangle with width " + width + " and height " + height + " is: " + area;
+    }
+  </script>
+
+</body>
+</html>

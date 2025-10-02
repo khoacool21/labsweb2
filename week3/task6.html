@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Maximum Value</title>
+</head>
+<body>
+  <h1>Find Maximum Value in Numbers</h1>
+  <p id="result"></p>
+
+  <label>Enter numbers (comma separated):</label>
+  <br>
+  <input type="text" id="numbers" placeholder="e.g. 10, 25, 7, 40, 15">
+  <br><br>
+
+  <button onclick="findMaxValue()">Find Max</button>
+
+  <script>
+    function findMaxValue() {
+      let input = document.getElementById("numbers").value;
+      let numArray = input.split(",").map(Number);
+
+      if (numArray.length > 0 && numArray.every(n => !isNaN(n))) {
+        let maxValue = Math.max(...numArray);
+        document.getElementById("result").innerHTML =
+          "Numbers: [" + numArray.join(", ") + "]<br>" +
+          "Maximum Value = " + maxValue;
+      } 
+    }
+  </script>
+</body>
+</html>
